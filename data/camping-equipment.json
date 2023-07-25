@@ -3,44 +3,6 @@
     "image": {
       "url": "/assets/images/backgrounds/3.jpg",
       "alt": "Camping-Hero"
-    },
-    "catalogue": [
-      {
-        "id": "1",
-        "imageUrl": "/assets/images/store/10.png",
-        "productName": "Camping 10nt",
-        "price": 300000
-      },
-      {
-        "id": "2",
-        "imageUrl": "/assets/images/store/11.png",
-        "productName": "Outdoor Den a14",
-        "price": 150000
-      },
-      {
-        "id": "3",
-        "imageUrl": "/assets/images/store/12.png",
-        "productName": "Potable Tent",
-        "price": 200000
-      },
-      {
-        "id": "4",
-        "imageUrl": "/assets/images/store/13.png",
-        "productName": "Potable Tent a23",
-        "price": 250000
-      },
-      {
-        "id": "5",
-        "imageUrl": "/assets/images/store/15.png",
-        "productName": "Potable Tent a23",
-        "price": 750000
-      },
-      {
-        "id": "6",
-        "imageUrl": "/assets/images/store/16.png",
-        "productName": "Potable Tent a23",
-        "price": 650000
-      }
-    ]
+    }
   }
 }

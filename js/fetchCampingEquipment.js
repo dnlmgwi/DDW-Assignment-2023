@@ -1,6 +1,6 @@
 function appendData(data) {
   let cardContainer = document.getElementById("product-list");
-  data.catalogue.forEach(element => {
+  data.forEach(element => {
     let div = document.createElement("div");
     div.innerHTML = `
     <div id="${element.id}" class="card">
@@ -9,10 +9,13 @@ function appendData(data) {
       </div>
       <div class="card-text">
         <p class="product-name">${element.productName}</p>
+      </div>
+      <div class="price-tag">
         <div class="price-text">
-          <p class="currency">MK</p>
-          <p class="price">${element.price}</p><div>
-        </div>                      
+              <p class="currency">MK</p>
+              <p class="price">${element.price}</p>
+        <div>
+      </div>                      
     </div>
     <button class="add-to-basket-button">Add To Basket</button>  
     `;
@@ -32,8 +35,21 @@ fetch('/data/camping-equipment.json')
   .then((res) => {
     const data = res.data;
     console.log("Data:" + data);
-    appendData(data);
     loadHeroImage(data);
   }).catch(function (err) {
     console.log("Error:" + err)
-  });;
+  });
+
+
+fetch('/data/catalogue.json')
+  .then(res => res.json())
+  .then((res) => {
+    const data = res.data.catalogue.filter(function (SpecialOffers) {
+      return SpecialOffers.category == "Tools" || SpecialOffers.category == "Bag";
+    });
+
+    console.log("Data:" + data);
+    appendData(data);
+  }).catch(function (err) {
+    console.log("Error:" + err)
+  });
