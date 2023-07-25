@@ -3,6 +3,8 @@
 <head>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/plugins/jquery-3.7.0.min.js"></script>
+    <script src="/js/fetchSpecialOffers.js"></script>
 </head>
 
 <body>
@@ -14,34 +16,54 @@
                 </div>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./store.html">Store</a></li>
+                    <li><a href="./basket.html">Camping Equipment</a></li>
+                    <li><a href="./offers.html">Furniture</a></li>
+                    <li><a href="./offers.html">Offers and Packages</a></li>
                     <li><a href="./reviews.html">Reviews</a></li>
                 </ul>
             </div>
         </nav>
+
     </header>
     <main>
+
         <div class="hero">
             <div class="hero-image">
-                <div class="hero-section">
-                    <div class="hero-card">
-                        <div class="hero-content">
-                            <div class="hero-title-section">
-                                <h2 class="hero-title">
-                                    heading
-                                </h2>
-                                <p class="hero-subtitle">
-                                    subtitle
-                                </p>
-                            </div>
-                            <div>
-                                <input class="hero-input-area"></input>
-                                <button class="hero-input-area-button">Submit</button>
+                <div class="hero-container">
+                    <div class="hero-contents">
+                        <div class="hero-section">
+                            <div class="hero-card">
+                                <div class="hero-content">
+                                    <div class="hero-title-section">
+                                        <h2 class="hero-title">
+                                            heading
+                                        </h2>
+                                        <p class="hero-subtitle">
+                                            subtitle
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <input class="hero-input-area"></input>
+                                        <button class="hero-input-area-button">Submit</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div>
+                    </div>
+                </div>
+                <div class="prompt-wrapper">
+                    <div class="scroll-prompt bounce">
+                        <p class="scroll-text">Scroll Down</p>
+                        <a href="./index.html" target="_blank">
+                            <img class="scroll-icon" src="./assets/images/icons/arrow-down-circle.svg" alt="Logo"
+                                height=50px>
+                        </a>
+                    </div>
                 </div>
             </div>
+
         </div>
         <div class="wrapper">
             <section>
@@ -51,63 +73,14 @@
                         <h2 class="section-title">Special Offers</h2>
                         <p class="section-subtitle">This is place holder text</p>
                     </div>
-                    <div>
+                    <!-- <div>
                         <a href="/store.html">
                             <p class="section-subtitle">More Items</p>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="row">
-                    <div class="card">
-                        <div class="product-box">
-                            <img src="/assets/images/store/pngegg (9).png">
-                        </div>
-                        <div class="box-title">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="product-box">
-
-                        </div>
-                        <div class="box-title">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="product-box">
-
-                        </div>
-                        <div class="box-title">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="card">
-                        <div class="product-box">
-
-                        </div>
-                        <div class="box-title">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="product-box">
-
-                        </div>
-                        <div class="box-title">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="product-box">
-
-                        </div>
-                        <div class="box-title">
-
-                        </div>
-                    </div>
+                <div id="product-list" class="grid-container">
+                    <!-- data loaded from specialOffers.json -->
                 </div>
             </section>
         </div>
@@ -122,9 +95,14 @@
 
                 <div class="social-media-links">
                     <ul>
-                        <li><a href="./index.html">Facebook</a></li>
-                        <li><a href="./reviews.html">Instagram</a></li>
-                        <li><a href="./reviews.html">Twitter</a></li>
+                        <li><a href="./index.html" target="_blank"><img src="./assets/images/icons/logo-facebook.png"
+                                    alt="Logo" height=20px></a></li>
+                        <li><a href="./index.html" target="_blank"><img src="./assets/images/icons/logo-instagram.png"
+                                    alt="Logo" height=20px></a></li>
+                        <li><a href="./index.html" target="_blank"><img src="./assets/images/icons/logo-linkedin.png"
+                                    alt="Logo" height=20px></a></li>
+                        <li><a href="./index.html" target="_blank"><img src="./assets/images/icons/logo-whatsapp.png"
+                                    alt="Logo" height=20px></a></li>
                     </ul>
 
                 </div>
@@ -136,6 +114,5 @@
         </div>
     </footer>
     <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./plugins/dynamic-json-slider/slider.js"></script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
 </body>
