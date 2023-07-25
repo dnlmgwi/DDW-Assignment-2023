@@ -14,6 +14,7 @@ body {
   font-family: system-ui;
   line-height: 1.5em;
   font-size: 1.125em;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -22,7 +23,6 @@ img {
 }
 
 /* Nav Bar */
-
 nav {
   display: flex;
   justify-content: space-around;
@@ -163,10 +163,12 @@ button {
   height: fit-content;
   align-items: center;
   justify-content: center;
+  margin: auto;
   margin-top: 1.125em;
   margin-bottom: 7em;
   margin-left: 2.125em;
   margin-right: 2.125em;
+  padding: 5em;
 }
 
 @media only screen and (max-width: 767px) {
@@ -310,11 +312,26 @@ button {
   padding: 0;
 }
 
-.hero-brand-image {
-  background-image: url("/assets/images/logo/brand-image.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+.page-hero {
+  background-color: #a1a1a1;
+  height: 500px;
+  width: 80%;
+  border-radius: 1.125em;
+  margin: auto;
+  margin-top: 15vh;
+  padding: 0;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }
 
 .hero-image {
@@ -324,12 +341,6 @@ button {
   background-size: cover;
   height: 100vh;
   /* background-position: 50% 50%; */
-}
-
-.hero-section {
-  padding: 1em;
-  display: flex;
-  flex-direction: row;
 }
 
 .hero-card {
@@ -437,6 +448,7 @@ h2.section-title {
 p.section-subtitle {
   padding: 0;
   margin-top: 0;
+  color: grey;
 }
 
 a:link {

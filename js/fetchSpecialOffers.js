@@ -23,7 +23,7 @@ function appendData(data) {
 fetch('/data/specialOffers.json')
   .then(res => res.json())
   .then((res) => {
-    const data = res.data;
+    const data = res.data.catalogue;
     console.log("Data:" + data);
     appendData(data);
   }).catch(function (err) {
