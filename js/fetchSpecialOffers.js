@@ -17,11 +17,13 @@ function appendData(data) {
         <div>
       </div>                     
     </div>
-    <button class="add-to-basket-button">Add To Basket</button>  
+    <button id="${element.id}" class="add-to-basket-button">Add To Basket</button>  
     `;
     cardContainer.appendChild(div);
   });
 }
+
+
 
 fetch('/data/catalogue.json')
   .then(res => res.json())

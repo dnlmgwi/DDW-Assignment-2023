@@ -12,7 +12,7 @@ function appendData(data) {
       </div>
       <div class="price-tag">
         <div class="price-text">
-              <p class="currency">MK</p>
+              <p class="currency">$</p>
               <p class="price">${element.price}</p>
         <div>
       </div>                      
