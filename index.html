@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/plugins/jquery-3.7.0.min.js"></script>
     <script src="/js/fetchSpecialOffers.js"></script>
+    <link rel="stylesheet" href="./plugins/keen-slider/keen-slider.min.css" />
+    <link rel="stylesheet" href="./plugins/keen-slider/sliderStyle.css" />
+    <link rel="stylesheet" href="./plugins/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="./plugins/magnific-popup/jquery.magnific-popup.min.js" />
     <title>Retail Camping Company | Home</title>
     <meta charset="UTF-8">
 </head>
@@ -15,7 +19,7 @@
         <nav>
             <div class="navbar">
                 <div>
-                    <img src="./assets/images/logo/logo.png" alt="Logo" height=40px>
+                    <img src="./assets/images/logo/logo.png" alt="Logo" class="icon-large">
                 </div>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
@@ -23,86 +27,142 @@
                     <li><a href="./furniture.html">Furniture</a></li>
                     <li><a href="./offers-and-Packages.html">Offers and Packages</a></li>
                     <li><a href="./reviews.html">Reviews</a></li>
+                    <li><a href="./basket.html">
+                            <div class="icon-large center"><img class="icon-small"
+                                    src="./assets/images/icons/bag-handle-outline.svg" alt="Logo"></div>
+                        </a></li>
                 </ul>
             </div>
         </nav>
 
     </header>
     <main>
+        <section>
+            <div class="hero">
+                <div class="hero-image">
+                    <div class="hero-container">
+                        <div class="hero-content">
+                            <h2 class="hero-title">
+                                Discover Your Next Adventure
+                            </h2>
+                            <p class="hero-subtitle">
+                                Our company was made for adventures
+                            </p>
+                        </div>
 
-        <div class="hero">
-            <div class="hero-image">
-                <div class="hero-container">
-                    <div class="hero-contents">
-                        <div class="hero-section">
-                            <div class="hero-card">
-                                <div class="hero-content">
-                                    <div class="hero-title-section">
-                                        <h2 class="hero-title">
-                                            heading
-                                        </h2>
-                                        <p class="hero-subtitle">
-                                            subtitle
-                                        </p>
-                                    </div>
-                                    <div class="hero-email-area">
-                                        <input class="hero-input-area">
-                                        <button class="round-button">
-                                            <img class="icon-small" src="/assets/images/icons/search.svg"
-                                                alt="search-icon">
-                                        </button>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="prompt-wrapper bounce">
+                        <p class="scroll-text">Scroll Down</p>
+                        <a href="#specialOffers">
+                            <img class="icon-medium" src="./assets/images/icons/arrow-down-circle.svg"
+                                alt="Scroll Down Arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="fill">
+                <div id="my-keen-slider" class="keen-slider page-hero">
+                    <div class="keen-slider__slide number-slide1">
+                        <div class="slide-container">
+
+                            <div class="slide-content">
+                                <h2 class="slide-title">
+                                    Explore your world
+                                </h2>
+                                <p class="slide-subtitle">
+                                    Try our products.
+                                </p>
                             </div>
+
+                        </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide2">
+                        <div class="slide-container">
+
+                            <div class="slide-content">
+                                <h2 class="slide-title">
+                                    Enjoy your getaway
+                                </h2>
+                                <p class="slide-subtitle">
+                                    Our products were made for this.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide3">
+                        <div class="slide-container">
+
+                            <div class="slide-content">
+                                <h2 class="slide-title">
+                                    Into the Wilderness
+                                </h2>
+                                <p class="slide-subtitle">
+                                    Welcome to your next adventure.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide4">
+                        <div class="slide-container">
+
+                            <div class="slide-content">
+                                <h2 class="slide-title">
+                                    Sunsets & Sunrises
+                                </h2>
+                                <p class="slide-subtitle">
+                                    Don't just Explore, Experience.
+                                </p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="prompt-wrapper bounce">
-                    <p class="scroll-text">Scroll Down</p>
-                    <a href="#section1">
-                        <img class="icon-medium" src="./assets/images/icons/arrow-down-circle.svg"
-                            alt="Scroll Down Arrow">
-                    </a>
-                </div>
             </div>
-        </div>
-        <div class="wrapper">
-            <section id="section1">
-                <div class="title-row">
-                    <!-- Section Title -->
-                    <div>
-                        <h2 class="section-title">Special Offers</h2>
-                        <p class="section-subtitle">Find the best deals and offers right here</p>
+        </section>
+
+        <section id="specialOffers" class="section-wrapper">
+            <div class="wrapper">
+                <div class="title-wrapper">
+                    <div class="title-row">
+                        <!-- Section Title -->
+                        <div>
+                            <h2 class="section-title">Special Offers</h2>
+                            <p class="section-subtitle">Find the best deals and offers right here</p>
+                        </div>
+                        <!-- <div>
+                                        <a href="/store.html">
+                                            <p class="section-subtitle">More Items</p>
+                                        </a>
+                                    </div> -->
                     </div>
-                    <!-- <div>
-                        <a href="/store.html">
-                            <p class="section-subtitle">More Items</p>
-                        </a>
-                    </div> -->
                 </div>
                 <div id="product-list" class="grid-container">
                     <!-- data loaded from specialOffers.json -->
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
     <footer class="footer-wrapper">
 
         <div class="footer-container">
             <div class="footer-items">
                 <div class="logo-box">
-                    <img src="./assets/images/logo/logo.png" alt="Logo" height=40px>
+                    <img src="./assets/images/logo/logo.png" alt="Logo" class="icon-large">
                 </div>
 
                 <div class="social-media-links">
                     <ul>
-                        <li><a href="./index.html" target="_blank"><img class="icon-small"
+                        <li><a href="https://www.facebook.com/" target="_blank"><img class="icon-small"
                                     src="./assets/images/icons/logo-facebook.png" alt="Logo"></a></li>
-                        <li><a href="./index.html" target="_blank"><img class="icon-small"
+                        <li><a href=".https://www.instagram.com/" target="_blank"><img class="icon-small"
                                     src="./assets/images/icons/logo-instagram.png" alt="Logo"></a></li>
-                        <li><a href="./index.html" target="_blank"><img class="icon-small"
+                        <li><a href="https://www.linkedin.com/" target="_blank"><img class="icon-small"
                                     src="./assets/images/icons/logo-linkedin.png" alt="Logo"></a></li>
-                        <li><a href="./index.html" target="_blank"><img class="icon-small"
+                        <li><a href="https://www.whatsapp.com/" target="_blank"><img class="icon-small"
                                     src="./assets/images/icons/logo-whatsapp.png" alt="Logo"></a></li>
                     </ul>
 
@@ -142,4 +202,6 @@
             });
         });
     </script>
+    <script src="./plugins/keen-slider/keen-slider.min.js"></script>
+    <script src="./plugins/keen-slider/sliderScript.js"></script>
 </body>

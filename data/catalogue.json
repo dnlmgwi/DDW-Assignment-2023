@@ -5,6 +5,7 @@
         "id": "1",
         "imageUrl": "/assets/images/store/1.png",
         "productName": "Camping 10nt",
+        "alt": "Tent",
         "price": 300000,
         "category": "Tent"
       },
@@ -12,6 +13,7 @@
         "id": "2",
         "imageUrl": "/assets/images/store/2.png",
         "productName": "Camping 10nt",
+        "alt": "Tent",
         "price": 300000,
         "category": "Tent"
       },
@@ -19,6 +21,7 @@
         "id": "3",
         "imageUrl": "/assets/images/store/3.png",
         "productName": "Camping 10nt",
+        "alt": "Tent",
         "price": 300000,
         "category": "Tent"
       },
@@ -26,6 +29,7 @@
         "id": "4",
         "imageUrl": "/assets/images/store/4.png",
         "productName": "Tread Master AN43",
+        "alt": "Tent",
         "price": 300000,
         "category": "Tent"
       },
@@ -33,6 +37,7 @@
         "id": "5",
         "imageUrl": "/assets/images/store/5.png",
         "productName": "OutDoor D43",
+        "alt": "Tent",
         "price": 300000,
         "category": "Tent"
       },
@@ -40,6 +45,7 @@
         "id": "6",
         "imageUrl": "/assets/images/store/6.png",
         "productName": "Cotton Hammok",
+        "alt": "Bed",
         "price": 300000,
         "category": "Bed"
       },
@@ -47,6 +53,7 @@
         "id": "7",
         "imageUrl": "/assets/images/store/7.png",
         "productName": "Prime FJ43",
+        "alt": "Tent",
         "price": 300000,
         "category": "Tent"
       },
@@ -54,6 +61,7 @@
         "id": "9",
         "imageUrl": "/assets/images/store/9.png",
         "productName": "Camper Chair VD32",
+        "alt": "Chair",
         "price": 300000,
         "category": "Chair"
       },
@@ -61,6 +69,7 @@
         "id": "10",
         "imageUrl": "/assets/images/store/10.png",
         "productName": "EverGreen Chair E25",
+        "alt": "Bag",
         "price": 300000,
         "category": "Bag"
       },
@@ -68,6 +77,7 @@
         "id": "11",
         "imageUrl": "/assets/images/store/11.png",
         "productName": "ErgoGreen 42FK",
+        "alt": "Bag",
         "price": 300000,
         "category": "Bag"
       },
@@ -75,6 +85,7 @@
         "id": "12",
         "imageUrl": "/assets/images/store/12.png",
         "productName": "Camping Choice Pro",
+        "alt": "Tent",
         "price": 300000,
         "category": "Tent"
       },
@@ -82,6 +93,7 @@
         "id": "13",
         "imageUrl": "/assets/images/store/13.png",
         "productName": "Texture Trooper G6",
+        "alt": "Bag",
         "price": 300000,
         "category": "Bag"
       },
@@ -89,6 +101,7 @@
         "id": "14",
         "imageUrl": "/assets/images/store/14.png",
         "productName": "Camping CS32 2023",
+        "alt": "Tent",
         "price": 300000,
         "category": "Tent"
       },
@@ -96,6 +109,7 @@
         "id": "15",
         "imageUrl": "/assets/images/store/15.png",
         "productName": "Cool Climate v2",
+        "alt": "Bag",
         "price": 300000,
         "category": "Bag"
       },
@@ -103,6 +117,7 @@
         "id": "16",
         "imageUrl": "/assets/images/store/16.png",
         "productName": "PitBull",
+        "alt": "Shoes",
         "price": 300000,
         "category": "Shoes"
       },
@@ -110,6 +125,7 @@
         "id": "17",
         "imageUrl": "/assets/images/store/17.png",
         "productName": "Timber Sole 1",
+        "alt": "Shoes",
         "price": 300000,
         "category": "Shoes"
       },
@@ -117,6 +133,7 @@
         "id": "18",
         "imageUrl": "/assets/images/store/18.png",
         "productName": "Heavy Handler",
+        "alt": "Shoes",
         "price": 300000,
         "category": "Shoes"
       },
@@ -124,6 +141,7 @@
         "id": "19",
         "imageUrl": "/assets/images/store/19.png",
         "productName": "XOR Stepper",
+        "alt": "Shoes",
         "price": 300000,
         "category": "Shoes"
       },
@@ -131,6 +149,7 @@
         "id": "20",
         "imageUrl": "/assets/images/store/20.png",
         "productName": "Steady 2021",
+        "alt": "Shoes",
         "price": 300000,
         "category": "Shoes"
       },
@@ -138,6 +157,7 @@
         "id": "21",
         "imageUrl": "/assets/images/store/21.png",
         "productName": "Camping Shoes v3",
+        "alt": "Shoes",
         "price": 300000,
         "category": "Shoes"
       },
@@ -145,6 +165,7 @@
         "id": "22",
         "imageUrl": "/assets/images/store/22.png",
         "productName": "Camping Sole FS4",
+        "alt": "Shoes",
         "price": 300000,
         "category": "Shoes"
       },
@@ -152,6 +173,7 @@
         "id": "23",
         "imageUrl": "/assets/images/store/23.png",
         "productName": "Heat Hover JS4",
+        "alt": "Cooker",
         "price": 300000,
         "category": "Cooker"
       },
@@ -159,6 +181,7 @@
         "id": "24",
         "imageUrl": "/assets/images/store/24.png",
         "productName": "Happy Camping",
+        "alt": "Shoes",
         "price": 300000,
         "category": "Shoes"
       },
@@ -166,6 +189,7 @@
         "id": "25",
         "imageUrl": "/assets/images/store/25.png",
         "productName": "Silver Steel",
+        "alt": "Tools",
         "price": 300000,
         "category": "Tools"
       },
@@ -173,6 +197,7 @@
         "id": "26",
         "imageUrl": "/assets/images/store/26.png",
         "productName": "Handy Hand",
+        "alt": "Tools",
         "price": 300000,
         "category": "Tools"
       },
@@ -180,6 +205,7 @@
         "id": "27",
         "imageUrl": "/assets/images/store/27.png",
         "productName": "Camping Chair",
+        "alt": "Bag",
         "price": 300000,
         "category": "Bag"
       },
@@ -187,6 +213,7 @@
         "id": "28",
         "imageUrl": "/assets/images/store/28.png",
         "productName": "Camping Chair",
+        "alt": "Bag",
         "price": 300000,
         "category": "Bag"
       },
@@ -194,6 +221,7 @@
         "id": "29",
         "imageUrl": "/assets/images/store/29.png",
         "productName": "Camping Chair",
+        "alt": "Bag",
         "price": 300000,
         "category": "Bag"
       },
@@ -201,6 +229,7 @@
         "id": "30",
         "imageUrl": "/assets/images/store/30.png",
         "productName": "Camping Chair",
+        "alt": "Chair",
         "price": 300000,
         "category": "Chair"
       }

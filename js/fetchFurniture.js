@@ -5,7 +5,7 @@ function appendData(data) {
     div.innerHTML = `
     <div id="${element.id}" class="card">
       <div class="product-box">
-        <img src="${element.imageUrl}">
+        <img src="${element.imageUrl}" alt="${element.alt}>
       </div>
       <div class="card-text">
         <p class="product-name">${element.productName}</p>
@@ -26,7 +26,7 @@ function appendData(data) {
 function loadHeroImage(data) {
   let heroImageContainer = document.getElementById("hero-image");
   let div = document.createElement("div");
-  div.innerHTML = `<img src="${data.image.url}">`;
+  div.innerHTML = `<img src="${data.image.url}" alt="${data.image.alt}">`;
   heroImageContainer.appendChild(div);
 }
 

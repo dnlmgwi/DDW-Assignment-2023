@@ -1,11 +1,15 @@
 function appendData(data) {
   let cardContainer = document.getElementById("product-list");
+
+
+
   data.forEach(element => {
     let div = document.createElement("div");
+
     div.innerHTML = `
     <div id="${element.id}" class="card">
       <div class="product-box">
-        <img src="${element.imageUrl}">
+        <img class=".popup-link-${element.id}" src="${element.imageUrl}" alt="${element.alt}">
       </div>
       <div class="card-text">
         <p class="product-name">${element.productName}</p>
@@ -17,12 +21,12 @@ function appendData(data) {
         <div>
       </div>                     
     </div>
-    <button id="${element.id}" class="add-to-basket-button">Add To Basket</button>  
+    <button class="add-to-basket-button">Add To Basket</button>  
     `;
+
     cardContainer.appendChild(div);
   });
 }
-
 
 
 fetch('/data/catalogue.json')
