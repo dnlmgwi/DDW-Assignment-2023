@@ -4,8 +4,9 @@ function appendData(data) {
     let div = document.createElement("div");
     div.innerHTML = `
     <div id="${element.id}" class="card">
-      <div class="product-box">
-        <img src="${element.imageUrl}" alt="${element.alt}">
+      <div class="product-box flex-col">
+          <img src="${element.imageUrl}" alt="${element.alt}">
+           <p class="prompt">Click to View Image</p>
       </div>
       <div class="card-text">
         <p class="product-name">${element.productName}</p>

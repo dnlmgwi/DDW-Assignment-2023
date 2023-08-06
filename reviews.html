@@ -4,7 +4,10 @@
 <head>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/plugins/jquery-3.7.0.min.js"></script>
+    <script src="./plugins/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="./plugins/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="./plugins/magnific-popup/jquery.magnific-popup.min.js" />
+        <link rel="stylesheet" href="./plugins/autobox/jquery.autobox.min.js" />
     <title>Retail Camping Company | Reviews</title>
     <meta charset="UTF-8">
 </head>
@@ -34,7 +37,7 @@
     <main>
         <div class="hero white">
             <div class="hero-section">
-                <div class="centered">
+                <div class="centered ">
                     <div class="title-row">
                         <!-- Section Title -->
                         <div>
@@ -50,8 +53,42 @@
                             <span class="search-text">Search</span>
                         </button>
                     </div>
+                    <div class="margin-top">
+                        <button class="round-button-with-text light-grey popup-modal" onclick="" href="#review-modal">
+                            <img class="icon-small filter-white" src="/assets/images/icons/mail-outline.svg"
+                                alt="send-icon">
+                            <span class="search-text">Leave a Review</span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
+        </div>
+        <div id="review-modal" class="popup mfp-hide">
+            <h1>Leave a Review</h1>
+
+            <form action="mailto:contact@rcc.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+                <div class="flex-row left-align">
+                    <p>Name:</p>
+                    <input type="text" name="Contact-Name" class="review-input-area"><br>
+                </div>
+                <div class="flex-row left-align">
+                    <p>Surname:</p>
+                    <input type="email" name="Contact-Email" class="review-input-area"><br><br>
+                </div>
+                <label>Message:<br></label>
+                <textarea name="Contact-Message" class="text-area-input">
+                </textarea><br>
+                <div class="flex-row"><button type="submit" value="Submit" class="round-button-with-text light-grey"
+                        onclick="">
+                        <img class="icon-small filter-white" src="/assets/images/icons/search.svg" alt="search-icon">
+                        <span class="search-text">Send</span>
+                    </button>
+                    <button class="round-button-with-text light-grey popup-modal-dismiss" onclick="">
+                        <span class="search-text">Cancel</span>
+                    </button>
+                </div>
+            </form>
         </div>
         <div class="wrapper">
             <section class="section-wrapper">
@@ -98,6 +135,8 @@
         </div>
     </footer>
     <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <script src="./plugins/magnific-popup/jquery.magnific-popup.js"></script>
+        <script src="./plugins/autobox/jquery.autobox.js"></script>
     <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
@@ -123,5 +162,20 @@
                 } // End if
             });
         });
+
+        $(function () {
+            $('.popup-modal').magnificPopup({
+                type: 'inline',
+                preloader: false,
+                focus: '#username',
+                modal: true
+            });
+            $(document).on('click', '.popup-modal-dismiss', function (e) {
+                e.preventDefault();
+                $.magnificPopup.close();
+            });
+        });
+
+        $(document).autoboxOn('textarea.text-area-input');
     </script>
 </body>
